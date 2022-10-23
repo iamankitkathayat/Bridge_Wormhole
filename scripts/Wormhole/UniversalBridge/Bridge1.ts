@@ -19,3 +19,14 @@ const AddressBook = require("../BridgeAddresses.json");
 const ChainIDBook = require("../ChainIDWormhole.json");
 const txReceipt = require("../UniversalBridge/txReceiptfile.json");
 const RPCURL = require("../RPC.json");
+const newABI = require("../ABI/tokenBridgeABI.json");
+
+
+
+const bytes32FromAddress = (address:any) => {
+  // let bytes32 = web3.utils.padLeft(web3.utils.hexToBytes(address), 32);
+  // let bytes32 = ethers.utils.formatBytes32String(address);
+  let bytes32 = ethers.utils.hexZeroPad(address,32);
+  console.log("bytes32 recipient address:",bytes32);
+  return bytes32;
+}
