@@ -30,3 +30,18 @@ const bytes32FromAddress = (address:any) => {
   console.log("bytes32 recipient address:",bytes32);
   return bytes32;
 }
+
+const bridgeTransfer = async (
+      sourceChain:any, 
+      targetChain:any, 
+      approveAmt:any,
+      transferAmt:any, 
+      recipientAddress:any,
+      nonce:any
+      ) => {
+
+        const signers = await ethers.getSigners();
+        const signer = signers[0];
+
+
+          const Enoch1 = await ethers.getContractFactory("Enoch1");
