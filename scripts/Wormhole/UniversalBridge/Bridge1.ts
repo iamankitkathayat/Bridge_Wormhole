@@ -44,4 +44,4 @@ const bridgeTransfer = async (
         const signer = signers[0];
 
 
-          const Enoch1 = await ethers.getContractFactory("Enoch1");
+          const KingJames = await ethers.getContractFactory("KingJames");
