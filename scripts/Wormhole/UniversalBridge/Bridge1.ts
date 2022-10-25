@@ -45,3 +45,47 @@ const bridgeTransfer = async (
 
 
           const KingJames = await ethers.getContractFactory("KingJames");
+          
+
+          let bridgeSource;
+          let sourceBridgeAddress;
+          let token;
+          let tokenAddress;
+          let chainID;
+          let sourceRPCurl;
+          let provider;
+
+          if(sourceChain == "Goerli"){
+            token = await Enoch1.attach(AddressBook.tokenAddresses.goerli);
+            tokenAddress = AddressBook.tokenAddresses.goerli;
+            sourceRPCurl = RPCURL.RPCurl.goerli;
+            provider = new ethers.providers.JsonRpcProvider(sourceRPCurl);
+            bridgeSource = await new ethers.Contract(AddressBook.tokenBridgeAddresses.goerliBridgeAddress, newABI, provider);
+            sourceBridgeAddress = AddressBook.tokenBridgeAddresses.goerliBridgeAddress;
+          }
+          else if(sourceChain == "Mumbai"){
+            token = await Enoch1.attach(AddressBook.tokenAddresses.mumbai);
+            tokenAddress = AddressBook.tokenAddresses.mumbai;
+            sourceRPCurl = RPCURL.RPCurl.mumbai;
+            provider = new ethers.providers.JsonRpcProvider(sourceRPCurl);
+            bridgeSource = await new ethers.Contract(AddressBook.tokenBridgeAddresses.mumbaiBridgeAddress, newABI, provider);
+            sourceBridgeAddress = AddressBook.tokenBridgeAddresses.mumbaiBridgeAddress;
+          }
+          else if(sourceChain == "Fuji"){
+            token = await Enoch1.attach(AddressBook.tokenAddresses.fuji);
+            tokenAddress = AddressBook.tokenAddresses.fuji;
+            sourceRPCurl = RPCURL.RPCurl.fuji;
+            provider = new ethers.providers.JsonRpcProvider(sourceRPCurl)
+            bridgeSource = await new ethers.Contract(AddressBook.tokenBridgeAddresses.fujiBridgeAddress, newABI, provider);
+            sourceBridgeAddress = AddressBook.tokenBridgeAddresses.fujiBridgeAddress;
+          }
+          else if(sourceChain == "BSC"){
+            token = await Enoch1.attach(AddressBook.tokenAddresses.bsc);
+            tokenAddress = AddressBook.tokenAddresses.bsc;
+            sourceRPCurl = RPCURL.RPCurl.bsc;
+            provider = new ethers.providers.JsonRpcProvider(sourceRPCurl)
+            bridgeSource = await new ethers.Contract(AddressBook.tokenBridgeAddresses.bscBridgeAddress, newABI, provider);
+            sourceBridgeAddress = AddressBook.tokenBridgeAddresses.bscBridgeAddress;
+          }
+  
+}
