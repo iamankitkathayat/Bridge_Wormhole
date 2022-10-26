@@ -100,4 +100,9 @@ const bridgeTransfer = async (
           else if(targetChain == "BSC"){
             chainID = ChainIDBook.wormholeChainIDs.bsc;
           }
+          
+  
+
+        console.log("<------------------Approve Function------------------------->");
+        console.log("Source bridge address : ",sourceBridgeAddress);
 }
