@@ -105,4 +105,8 @@ const bridgeTransfer = async (
 
         console.log("<------------------Approve Function------------------------->");
         console.log("Source bridge address : ",sourceBridgeAddress);
+        console.log("Amount of Approved tokens are: : ",approveAmt);
+        
+        const approveTx = await token.approve(sourceBridgeAddress, approveAmt);
+
 }
