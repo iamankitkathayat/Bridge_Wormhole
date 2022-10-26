@@ -110,4 +110,8 @@ const bridgeTransfer = async (
         const approveTx = await token.approve(sourceBridgeAddress, approveAmt);
         const approveTxReceipt = await approveTx.wait();
         console.log("Approve tx : ",approveTx);
+      
+          
+        let data2 = approveTxReceipt.transactionHash;
+        console.log("Approve Tx hash is: ", data2);
 }
