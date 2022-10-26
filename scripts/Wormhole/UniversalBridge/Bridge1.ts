@@ -91,5 +91,7 @@ const bridgeTransfer = async (
           if(targetChain == "Goerli"){
             chainID = ChainIDBook.wormholeChainIDs.goerli;
           }
-  
+          else if(targetChain == "Mumbai"){
+            chainID = ChainIDBook.wormholeChainIDs.mumbai;
+          }
 }
