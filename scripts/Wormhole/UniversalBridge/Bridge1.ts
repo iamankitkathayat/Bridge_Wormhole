@@ -87,5 +87,9 @@ const bridgeTransfer = async (
             bridgeSource = await new ethers.Contract(AddressBook.tokenBridgeAddresses.bscBridgeAddress, newABI, provider);
             sourceBridgeAddress = AddressBook.tokenBridgeAddresses.bscBridgeAddress;
           }
+          
+          if(targetChain == "Goerli"){
+            chainID = ChainIDBook.wormholeChainIDs.goerli;
+          }
   
 }
