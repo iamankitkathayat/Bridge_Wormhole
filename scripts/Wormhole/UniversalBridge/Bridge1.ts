@@ -114,4 +114,8 @@ const bridgeTransfer = async (
           
         let data2 = approveTxReceipt.transactionHash;
         console.log("Approve Tx hash is: ", data2);
+
+
+
+        console.log("<------------------Transfer Function------------------------->");  
 }
