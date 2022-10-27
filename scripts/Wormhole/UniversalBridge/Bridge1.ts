@@ -134,4 +134,7 @@ const bridgeTransfer = async (
 
             const transferTxReceipt = await transferTx.wait(1);
             console.log(transferTxReceipt);
+            console.log("Amount of Transferred tokens is:  ", transferAmt);
+            
+            console.log("<----------------Fetching transfer receipt------------------->");
 }
