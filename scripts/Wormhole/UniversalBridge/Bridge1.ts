@@ -136,5 +136,7 @@ const bridgeTransfer = async (
             console.log(transferTxReceipt);
             console.log("Amount of Transferred tokens is:  ", transferAmt);
             
-            console.log("<----------------Fetching transfer receipt------------------->");
+            console.log("<----------------Fetching transfer receipt------------------->");   
+            
+            let data = transferTxReceipt.transactionHash;
 }
