@@ -125,4 +125,8 @@ const bridgeTransfer = async (
 
           const transferTx = await bridgeSource.connect(signer).transferTokens(
             tokenAddress,
+            transferAmt,
+            chainID,
+            bytes32FromAddress(recipientAddress),
+            0, //arbiterFee(this is always zero)
 }
