@@ -129,4 +129,9 @@ const bridgeTransfer = async (
             chainID,
             bytes32FromAddress(recipientAddress),
             0, //arbiterFee(this is always zero)
+            nonce
+            );
+
+            const transferTxReceipt = await transferTx.wait(1);
+            console.log(transferTxReceipt);
 }
