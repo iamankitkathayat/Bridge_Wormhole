@@ -118,4 +118,7 @@ const bridgeTransfer = async (
 
 
         console.log("<------------------Transfer Function------------------------->");  
+          
+
+        console.log("Here",tokenAddress,transferAmt,chainID,bytes32FromAddress(recipientAddress),nonce);
 }
