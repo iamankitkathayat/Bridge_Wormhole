@@ -60,7 +60,7 @@ const bridgeTransfer = async (
             sourceBridgeAddress = AddressBook.tokenBridgeAddresses.goerliBridgeAddress;
           }
           else if(sourceChain == "Mumbai"){
-            token = await Enoch1.attach(AddressBook.tokenAddresses.mumbai);
+            token = await KingJames.attach(AddressBook.tokenAddresses.mumbai);
             tokenAddress = AddressBook.tokenAddresses.mumbai;
             sourceRPCurl = RPCURL.RPCurl.mumbai;
             provider = new ethers.providers.JsonRpcProvider(sourceRPCurl);
