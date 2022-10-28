@@ -139,4 +139,7 @@ const bridgeTransfer = async (
             console.log("<----------------Fetching transfer receipt------------------->");   
             
             let data = transferTxReceipt.transactionHash;
+              
+            
+            console.log("Writing a new file to store tx Receipt...");
 }
