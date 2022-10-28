@@ -169,4 +169,6 @@ const bridgeTransfer = async (
 const main = async () => {
 
       console.log("Starting the bridge transfer...");
+      //  Calling the bridgeTransfer function here....
+      await bridgeTransfer("Goerli", "Fuji", "50000000000000000000", "50000000000000000000", "0x7bBD77cd941426D77ddaA623Bc9b1F6f0a07db42", 104);
 }
