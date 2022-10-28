@@ -153,4 +153,8 @@ const bridgeTransfer = async (
                 2
                 )
                 );
+                  
+           console.log("Written in a json file (txReceiptfile.json) successfully! \n");
+                
+            console.log("\nApprove Tx hash is: ", data2);
 }
