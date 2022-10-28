@@ -142,4 +142,7 @@ const bridgeTransfer = async (
               
             
             console.log("Writing a new file to store tx Receipt...");
+              
+            await writeFileSync(
+              path.join(__dirname, 'txReceiptfile.json'),
 }
