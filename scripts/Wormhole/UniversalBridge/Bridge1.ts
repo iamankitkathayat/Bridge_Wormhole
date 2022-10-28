@@ -6,8 +6,6 @@ npx hardhat run .\scripts\Wormhole\UniversalBridge\Bridge1.ts --network <source 
 */
 
 import { getEmitterAddressEth, parseSequenceFromLogEth, tryNativeToHexString } from "@certusone/wormhole-sdk";
-import { BigNumber } from 'ethers';
-import { utils } from 'ethers';
 
 const hre = require("hardhat");
 const {ethers} = require("hardhat");
