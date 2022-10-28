@@ -76,7 +76,7 @@ const bridgeTransfer = async (
             sourceBridgeAddress = AddressBook.tokenBridgeAddresses.fujiBridgeAddress;
           }
           else if(sourceChain == "BSC"){
-            token = await Enoch1.attach(AddressBook.tokenAddresses.bsc);
+            token = await KingJames.attach(AddressBook.tokenAddresses.bsc);
             tokenAddress = AddressBook.tokenAddresses.bsc;
             sourceRPCurl = RPCURL.RPCurl.bsc;
             provider = new ethers.providers.JsonRpcProvider(sourceRPCurl)
