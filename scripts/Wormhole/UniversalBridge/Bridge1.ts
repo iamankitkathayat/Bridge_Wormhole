@@ -159,4 +159,9 @@ const bridgeTransfer = async (
             console.log("\nApprove Tx hash is: ", data2);
             console.log("Amount of tokens Approved are:  ",approveAmt);
             console.log("New Transfer Tx hash fetched from txReceiptfile.json is: ", data);
+            console.log("Amount of tokens Transferred are:  ", transferAmt);
+
+
+
+}
 }
