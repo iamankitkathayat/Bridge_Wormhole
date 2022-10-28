@@ -5,8 +5,6 @@ Run this script in Source testnet by :
 npx hardhat run .\scripts\Wormhole\UniversalBridge\Bridge1.ts --network <source chain>
 */
 
-import { getEmitterAddressEth, parseSequenceFromLogEth, tryNativeToHexString } from "@certusone/wormhole-sdk";
-
 const hre = require("hardhat");
 const {ethers} = require("hardhat");
 const fs = require('fs');
