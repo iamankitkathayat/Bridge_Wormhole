@@ -5,8 +5,6 @@ Run this script in Source testnet by :
 npx hardhat run .\scripts\Wormhole\UniversalBridge\Bridge1.ts --network <source chain>
 */
 
-import { getEmitterAddressEth, parseSequenceFromLogEth, tryNativeToHexString } from "@certusone/wormhole-sdk";
-
 const hre = require("hardhat");
 const {ethers} = require("hardhat");
 const fs = require('fs');
@@ -54,7 +52,7 @@ const bridgeTransfer = async (
           let provider;
 
           if(sourceChain == "Goerli"){
-            token = await Enoch1.attach(AddressBook.tokenAddresses.goerli);
+            token = await KingJames.attach(AddressBook.tokenAddresses.goerli);
             tokenAddress = AddressBook.tokenAddresses.goerli;
             sourceRPCurl = RPCURL.RPCurl.goerli;
             provider = new ethers.providers.JsonRpcProvider(sourceRPCurl);
@@ -62,7 +60,7 @@ const bridgeTransfer = async (
             sourceBridgeAddress = AddressBook.tokenBridgeAddresses.goerliBridgeAddress;
           }
           else if(sourceChain == "Mumbai"){
-            token = await Enoch1.attach(AddressBook.tokenAddresses.mumbai);
+            token = await KingJames.attach(AddressBook.tokenAddresses.mumbai);
             tokenAddress = AddressBook.tokenAddresses.mumbai;
             sourceRPCurl = RPCURL.RPCurl.mumbai;
             provider = new ethers.providers.JsonRpcProvider(sourceRPCurl);
@@ -70,7 +68,7 @@ const bridgeTransfer = async (
             sourceBridgeAddress = AddressBook.tokenBridgeAddresses.mumbaiBridgeAddress;
           }
           else if(sourceChain == "Fuji"){
-            token = await Enoch1.attach(AddressBook.tokenAddresses.fuji);
+            token = await KingJames.attach(AddressBook.tokenAddresses.fuji);
             tokenAddress = AddressBook.tokenAddresses.fuji;
             sourceRPCurl = RPCURL.RPCurl.fuji;
             provider = new ethers.providers.JsonRpcProvider(sourceRPCurl)
