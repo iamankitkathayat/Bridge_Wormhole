@@ -164,4 +164,9 @@ const bridgeTransfer = async (
 
 
 }
+
+
+const main = async () => {
+
+      console.log("Starting the bridge transfer...");
 }
