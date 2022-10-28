@@ -52,7 +52,7 @@ const bridgeTransfer = async (
           let provider;
 
           if(sourceChain == "Goerli"){
-            token = await Enoch1.attach(AddressBook.tokenAddresses.goerli);
+            token = await KingJames.attach(AddressBook.tokenAddresses.goerli);
             tokenAddress = AddressBook.tokenAddresses.goerli;
             sourceRPCurl = RPCURL.RPCurl.goerli;
             provider = new ethers.providers.JsonRpcProvider(sourceRPCurl);
