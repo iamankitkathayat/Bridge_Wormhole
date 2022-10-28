@@ -5,11 +5,8 @@ Run this script in Source testnet by :
 npx hardhat run .\scripts\Wormhole\UniversalBridge\Bridge1.ts --network <source chain>
 */
 
-const hre = require("hardhat");
 const {ethers} = require("hardhat");
-const fs = require('fs');
 const { writeFileSync } = require("fs");
-const { readFileSync } = require("fs");
 const path = require('path');
 const AddressBook = require("../BridgeAddresses.json");
 const ChainIDBook = require("../ChainIDWormhole.json");
