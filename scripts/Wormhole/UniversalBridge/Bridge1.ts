@@ -145,4 +145,12 @@ const bridgeTransfer = async (
               
             await writeFileSync(
               path.join(__dirname, 'txReceiptfile.json'),
+              JSON.stringify(
+                {
+                  data
+                },
+                null,
+                2
+                )
+                );
 }
