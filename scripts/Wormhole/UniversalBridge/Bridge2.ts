@@ -146,13 +146,12 @@ const main = async () => {
   console.log("Starting the Complete Transfer...");
 
 //await completeTransfer("Source Chain", "Target Chain");
-  await completeTransfer("Goerli", "Mumbai");
+  await completeTransfer("Mumbai", "Goerli");
 
   /*  console.log("\n<------------------Complete Transfer function------------------------->");
 
     // function -> redeem
     // STEP-4
-    // targetTokenBridge Fuji - 0x61E44E506Ca5659E6c0bba9b678586fA2d729756
     const completeTransferTx = await bridgeInteractFuji.completeTransfer(
         Buffer.from(vaaBytes.vaaBytes, "base64")
     );
