@@ -152,13 +152,9 @@ const main = async () => {
 
     // function -> redeem
     // STEP-4
-    const completeTransferTx = await bridgeInteractFuji.completeTransfer(
-        Buffer.from(vaaBytes.vaaBytes, "base64")
-    );
 
-    const receipt = await completeTransferTx.wait();
-    console.log(receipt);
-    */
+
+
     
 };
 
