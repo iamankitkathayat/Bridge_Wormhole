@@ -156,9 +156,7 @@ const main = async () => {
         Buffer.from(vaaBytes.vaaBytes, "base64")
     );
 
-    const receipt = await completeTransferTx.wait();
-    console.log(receipt);
-    */
+
     
 };
 
