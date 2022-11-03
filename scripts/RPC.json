@@ -5,5 +5,7 @@
         "fuji" : "https://api.avax-test.network/ext/bc/C/rpc",
         "bsc" : "https://data-seed-prebsc-1-s1.binance.org:8545"
     },
+    
+    "WormholeRestAddress" : "https://wormhole-v2-testnet-api.certus.one"
 
 }
