@@ -1,1 +1,28 @@
+{
+    "tokenBridgeAddresses": {
+        "goerliBridgeAddress" : "0xF890982f9310df57d00f659cf4fd87e65adEd8d7",
+        "mumbaiBridgeAddress" : "0x377D55a7928c046E18eEbb61977e714d2a76472a",
+        "fujiBridgeAddress" : "0x61E44E506Ca5659E6c0bba9b678586fA2d729756",
+        "bscBridgeAddress" : "0x9dcF9D205C9De35334D646BeE44b2D2859712A09"
+    } ,
 
+    "coreBridgeAddresses": {
+        "goerliBridgeAddress" : "0x706abc4E45D419950511e474C7B9Ed348A4a716c",
+        "mumbaiBridgeAddress" : "0x0CBE91CF822c73C2315FB05100C2F714765d5c20",
+        "fujiBridgeAddress" : "0x7bbcE28e64B3F8b84d876Ab298393c38ad7aac4C",
+        "bscBridgeAddress" : "0x68605AD7b15c732a30b1BbC62BE8F2A509D74b4D"
+    } ,
+
+    "tokenAddresses" : {
+        "goerli" : "0xC7cB566FB6f662E4543E28D3DeADdE2a3b9637Eb",
+        "mumbai" : "0xfdf8262ffa014c84bd4818b0daa0abe7b2ab03f6",
+        "fuji" : "0x6a194738c7C560d8b43988fBb8cb8AC5308646D4",
+        "bsc" : "0x9A57750704168d62a0900C6dAB316F47FcD59f96"
+    } ,
+    "bridgeInteractAddresses" : {
+        "goerli" : "0x7EB3798B9d3283F5342119a697B3FAfBF3378FCe",
+        "mumbai" : "0x24901bee51b1254147Fd74a03739C457E7578338",
+        "fuji" : "0x930CcF606e0d1eeC7ce9142C33171229791C0dA3",
+        "bsc" : "0x178DbB4cE1c03068954403588795A9Fc7368e1C2"
+    }
+}
