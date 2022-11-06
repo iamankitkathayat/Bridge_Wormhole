@@ -1,1 +1,8 @@
-
+{
+    "wormholeChainIDs" : {
+        "goerli" : "2",
+        "mumbai" : "5",
+        "fuji" : "6",
+        "bsc" : "4"
+    }
+}
