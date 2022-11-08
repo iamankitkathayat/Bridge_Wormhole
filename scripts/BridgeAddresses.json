@@ -19,10 +19,5 @@
         "fuji" : "0x6a194738c7C560d8b43988fBb8cb8AC5308646D4",
         "bsc" : "0x9A57750704168d62a0900C6dAB316F47FcD59f96"
     } ,
-    "bridgeInteractAddresses" : {
-        "goerli" : "0x7EB3798B9d3283F5342119a697B3FAfBF3378FCe",
-        "mumbai" : "0x24901bee51b1254147Fd74a03739C457E7578338",
-        "fuji" : "0x930CcF606e0d1eeC7ce9142C33171229791C0dA3",
-        "bsc" : "0x178DbB4cE1c03068954403588795A9Fc7368e1C2"
-    }
+
 }
