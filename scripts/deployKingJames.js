@@ -3,11 +3,11 @@ const hre = require("hardhat");
 async function main() {
 
   const KingJamestoken = await hre.ethers.getContractFactory("KingJames");
-  const kj = await KingJamestoken.deploy();
+  const kjames = await KingJamestoken.deploy();
 
-  await kj.deployed();
+  await kjames.deployed();
   
-  console.log("KingJames token deployed to ", kj.address);
+  console.log("KingJames token deployed to ", kjames.address);
 }
 
 
