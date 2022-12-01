@@ -19,14 +19,12 @@ module.exports = {
 
 
     goerli: {
-      // url: 'https://goerli.infura.io/v3/680f182649ca427a8fff593b93f71fac',
       url: RPCURL.RPCurl.goerli,
       accounts: [process.env.PRIVATE_KEY],
       chainId: 5,
     },
 
     mumbai: {
-      // url: `https://matic-mumbai.chainstacklabs.com`,
       url: RPCURL.RPCurl.mumbai,
       accounts: [process.env.PRIVATE_KEY],
       chainId: 80001,
